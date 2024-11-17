@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontak</title>
+</head>
+<style>
+    .drawer {
+            position: fixed;
+            right: -400px; /* Mulai tersembunyi */
+            top: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            transition: right 0.8s ease; /* Transisi yang halus */
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column; /* Susun elemen secara vertikal */
+        }
+
+    .drawer-header {
+            display: flex;
+            justify-content: flex-end; /* Posisikan tombol ke kanan */
+            top: 0;
+            margin-right: 15px;
+            margin-bottom: 20px; /* Jarak bawah tombol */
+        }
+    a {
+            color: white; /* Warna link putih */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            font-size: 20px;/* Memberikan padding */
+            text-align: left;
+        }
+
+    a:hover {
+            text-decoration: underline; /* Menambahkan garis bawah saat hover */
+        }
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color:rgb(197, 190, 190)  ;
+            color: #2a3132;
+            text-align: center;
+
+    }
+    h2 {
+            color: #2a3132;
+            font-size: 33px;
+            text-align: center;
+            margin-top: 7%;
+            margin-left: 8%;
+            margin-right: 8%;
+
+        }
+    table {
+        border-collapse: collapse;
+            margin-top: 30px;
+            margin-left: 40%;
+        }
+    tr {
+            padding: 50px;
+        }
+
+</style>
+
+<body>
+    <div id="drawer" class="drawer">
+        <div class="drawer-header">
+            <button onclick="closeDrawer()">X</button>
+        </div>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="aboutme.html">About Me</a></p>
+        <p><a href="profil.html">CV</a></p>
+        <p><a href="sertifikat.html">Award and Certification</a></p>
+        <p><a href="kontak.html">Contact</a></p>
+    </div>
+    <button onclick="openDrawer()" style="margin-top: 20px; margin-left: 95%;">☰</button>
+
+    <script>
+        function openDrawer() {
+            document.getElementById('drawer').style.right = '0'; // Menampilkan drawer
+        }
+
+        function closeDrawer() {
+            document.getElementById('drawer').style.right = '-400px'; // Menyembunyikan drawer
+        }
+    </script>
+
+<h2>Contact</h2>
+<hr style=" margin-left: 8%;
+            margin-right: 8%;">
+    
+    <table>
+        <tr>
+            <td><img src="https://buatlogoonline.com/wp-content/uploads/2022/09/Logo-WA-Hitam-Putih.png" alt="" width=" 35px" height="35px"></td>
+            <td><b>+62 8** **** ****</b></td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-icons-2745483.png?f=webp&w=512" alt="Instagram" width="35px" height="35px"></td>
+            <td><a href="https://www.instagram.com/anisahamid_21?igsh=MWQ5NnVveWdpY3p3dw==" target="_blank" style="color: #2a3132 ; padding-left: 40px;" >@anisahamid_21</a></td>
+        </tr>
+        <tr>
+            <td> <img src="https://www.gstatic.com/images/branding/product/1x/gmail_2020q4_48dp.png" alt="Gmail" width="35px" height="35px"></td>
+            <td><a href="mailto:anisahamid2115@gmial.com" target="_blank" style="color: #2a3132 ; padding-left: 70px;" >anisa69@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td> <img src="https://e7.pngegg.com/pngimages/600/60/png-clipart-computer-icons-linkedin-social-media-social-media-angle-text.png" alt="Instagram" width="35px" height="35px"></td>
+            <td><a href="https://www.linkedin.com/in/anisa-hamid-492033269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app class=" target="_blank" style="color: #2a3132 ;">Anisa Hamid</a></td>
+        </tr>
+    </table>
+</body>
+</html>

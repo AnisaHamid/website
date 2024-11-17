@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sertifikat</title>
+</head>
+<style>
+        .drawer {
+            position: fixed;
+            right: -400px; /* Mulai tersembunyi */
+            top: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            transition: right 0.8s ease; /* Transisi yang halus */
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column; /* Susun elemen secara vertikal */
+        }
+
+    .drawer-header {
+            display: flex;
+            justify-content: flex-end; /* Posisikan tombol ke kanan */
+            top: 0;
+            margin-right: 15px;
+            margin-bottom: 20px; /* Jarak bawah tombol */
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #2a3132;
+            color: white;
+        }
+        img {
+            width: 320px;
+            height: auto;
+            transition: transform 0.3s; /* Animasi saat hover */
+        }
+        img:hover {
+            transform: scale(1.1); /* Membesarkan gambar saat hover */
+        }
+        td {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        a {
+            color: white; /* Warna link putih */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            font-size: 20px; /* Ukuran font */
+        }
+        a:hover {
+            text-decoration: underline; /* Garis bawah saat hover */
+            color: #ffcc00; /* Mengubah warna saat hover */
+        }
+        .instagram-icon {
+            position: absolute; /* Posisikan ikon secara absolut */
+            top: 10px; /* Jarak dari atas */
+            left: 10px; /* Jarak dari kiri */
+            width: 50px;
+            height: 50px;
+        }
+        .linkedin-icon{
+            position: absolute; /* Posisikan ikon secara absolut */
+            top: 15px; /* Jarak dari atas */
+            left: 40px; /* Jarak dari kiri */
+            width: 31px;
+            height: 30px;    
+        }
+
+        h2 {
+            color:white;
+            font-size: 33px;
+            text-align: center;
+            margin-top: 7%;
+            margin-left: 8%;
+            margin-right: 8%;
+
+        }
+        p {
+            font-size: 17px;
+            text-align: left;
+            margin-top:0;
+            margin-bottom:  8%;
+            margin-left: 8%;
+            margin-right: 8%;
+            line-height: 2;
+        }
+</style>
+<body>
+    <div id="drawer" class="drawer">
+        <div class="drawer-header">
+            <button onclick="closeDrawer()">X</button>
+        </div>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;" href="index.html">Home</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="aboutme.html">About Me</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="profil.html">CV</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="sertifikat.html">Award and Certification</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="kontak.html">Contact</a></p>
+    </div>
+    <button onclick="openDrawer()" style="margin-top: 20px; margin-left: 95%;">☰</button>
+
+    <script>
+        function openDrawer() {
+            document.getElementById('drawer').style.right = '0'; // Menampilkan drawer
+        }
+
+        function closeDrawer() {
+            document.getElementById('drawer').style.right = '-400px'; // Menyembunyikan drawer
+        }
+    </script>
+
+<a href="https://www.linkedin.com/in/anisa-hamid-492033269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app class=" class="linkedin-icon" target="_blank">
+    <img  class="linkedin-icon" src="https://e7.pngegg.com/pngimages/600/60/png-clipart-computer-icons-linkedin-social-media-social-media-angle-text.png" alt="Instagram" width="5px" height="5px"> <!-- Ukuran yang diperbesar -->
+</a>
+<a href="https://www.instagram.com/anisahamid_21?igsh=MWQ5NnVveWdpY3p3dw==" class="instagram-icon" target="_blank">
+    <img  class="instagram-icon" src="https://static.vecteezy.com/system/resources/previews/040/550/696/non_2x/instagram-button-icon-instagram-screen-social-media-and-social-network-interface-template-free-png.png" alt="Instagram" width="5px" height="5px"> <!-- Ukuran yang diperbesar -->
+</a>
+
+
+
+
+    <h2>Award and Certification</h2>
+    <hr style=" margin-left: 8%;
+                margin-right: 8%;">
+
+    <table style="margin-top: 5%;
+                margin-left: 6%;
+                 width: 60%;">
+        <tr>
+            <td><a href="anc/unnic.jpeg" target="_blank"><img src="anc/unnic.jpeg" alt=""></a></td>
+            <td><a href="anc/acc_challenge.jpeg"  target="_blank"><img src="anc/acc_challenge.jpeg" alt=""></a></td>
+            <td><a href="anc/siswa_terbaik.jpeg"  target="_blank"><img src="anc/siswa_terbaik.jpeg" alt=""></a></td>
+        </tr>
+        <tr>
+            <td>Peserta Lomba UNNIC oleh UNIBI <br>(25 Mei 2022)</td>
+            <td>Juara 1 Lomba Accounting Challenge oleh UNSERA <br>(22 November 2022)</td>
+            <td>Siswa terbaik Bidang Akademik <br>(08 Mei 2023)</td>
+        </tr>
+        <tr>
+            <td><a href="anc/siswa_berprestasi.jpeg"  target="_blank"><img src="anc/siswa_berprestasi.jpeg" alt=""></a></td>
+            <td><a href="anc/lap_keuangan.jpeg"  target="_blank"><img src="anc/lap_keuangan.jpeg" alt=""></a></td>
+            <td><a href="anc/table_maner.jpeg"  target="_blank"><img src="anc/table_maner.jpeg" alt=""></a></td>
+        </tr>
+        <tr>
+            <td>Siswa Berprestasi Bidang Akademik <br>(04 Juli 2022)</td>
+            <td>Peserta Webinar "Membuat Laporan Keuangan dengan mudah di EXcel" Oleh Kelas Work <br>(13 Februari 2023)</td>
+            <td>Peserta Table Manner Course oleh SMKN 3 Cilegon <br>(17 Februari 2021)</td>
+        </tr>
+        <tr>
+            <td><a href="anc/ukom.jpeg"  target="_blank"><img src="anc/ukom.jpeg" alt=""></a></td>
+            <td><a href="anc/siap_kerja.jpeg"  target="_blank"><img src="anc/siap_kerja.jpeg" alt=""></a></td>
+            <td><a href="anc/k3.jpeg"  target="_blank"><img src="anc/k3.jpeg" alt=""></a></td>
+        </tr>
+        <tr>
+            <td>Peserta Ujian Praktik Kejuruan oleh BCS Logistics <br>(13 Maret 2023)</td>
+            <td>Peserta Seminar "Program Siap Kerja" oleh Link Productive<br> (27 September 2020)</td>
+            <td>Peserta E-Learning K3 oleh International Labour Organization<br> (20 Juli 2022)</td>
+        </tr>
+        <tr>
+            <td><a href="anc/karate.jpeg"  target="_blank"><img src="anc/karate.jpeg" alt=""></a></td>
+            <td><a href="anc/peserta_terbaik.jpeg"  target="_blank"><img src="anc/peserta_terbaik.jpeg" alt=""></a></td>
+            <td><a href="anc/moriest.jpeg"  target="_blank"><img src="anc/moriest.jpeg" alt=""></a></td>
+        </tr>
+        <tr>
+            <td>Juara 3 karate Kumiter -30kg Putri O2SN SMP Tingkat Kota Cilegon (12 April 2018)</td>
+            <td>Peserta Terbaik Putri kegiatan MORIEST, AMT dan LKM di STTIKOM Insna Unggul (27 September 2023) </td>
+            <td>Peserta MORIEST di STTIKOM Insna Unggul (23 September 2023)</td>
+        </tr>
+        <tr>
+            <td><a href="anc/amt.jpeg" target="_blank"><img src="anc/amt.jpeg" alt=""></a></td>
+            <td><a href="anc/lkm.jpeg" target="_blank"><img src="anc/lkm.jpeg" alt=""></a></td>
+            <td><a href="anc/magang.jpeg" target="_blank"><img src="anc/magang.jpeg" alt=""></a></td>
+        </tr>
+        <tr>
+            <td>Peserta AMT di STTIKOM Insna Unggul (26 September 2023)</td>
+            <td>Peserta LKM di STTIKOM Insna Unggul (28 September 2023)</td>
+            <td>Magang Kerja di PT. KSOP Kelas I Banten (23 Februari 2023)</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

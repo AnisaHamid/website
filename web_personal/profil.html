@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Anisa Hamid</title>
+    <style>
+        .drawer {
+            position: fixed;
+            right: -400px; /* Mulai tersembunyi */
+            top: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            transition: right 0.8s ease; /* Transisi yang halus */
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column; /* Susun elemen secara vertikal */
+        }
+
+        .drawer-header {
+            display: flex;
+            justify-content: flex-end; /* Posisikan tombol ke kanan */
+            top: 0;
+            margin-right: 15px;
+            margin-bottom: 20px; /* Jarak bawah tombol */
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline; /* Menambahkan garis bawah saat hover */
+        }
+
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header { 
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #2a3132;
+            color: white;
+            padding: 10px 0;
+
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        table{
+            margin-top: 0; 
+            margin-left: 20px; 
+            margin-right: auto; 
+            width: 40%;
+            align-items: flex-end;
+            border-collapse: collapse;
+             border-width: 40%; 
+             margin-top: 0;
+        }
+
+        ul li a{
+            line-height: 1.5em;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="drawer" class="drawer">
+        <div class="drawer-header">
+            <button onclick="closeDrawer()">X</button>
+        </div>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;" href="index.html">Home</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="aboutme.html">About Me</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="profil.html">CV</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="sertifikat.html">Award and Certification</a></p>
+        <p><a  style="color: white;
+            text-decoration: none;
+            font-size: 20px;"  href="kontak.html">Contact</a></p>
+    </div>
+    <button onclick="openDrawer()" style="margin-top: 20px; margin-left: 95%;">☰</button>
+
+    <script>
+        function openDrawer() {
+            document.getElementById('drawer').style.right = '0'; // Menampilkan drawer
+        }
+
+        function closeDrawer() {
+            document.getElementById('drawer').style.right = '-400px'; // Menyembunyikan drawer
+        }
+    </script>
+
+    <div style="display: flex; align-items: center; padding-left: 50px; padding-top: 0; padding-bottom: 50px;">
+        <img src="foto.jpeg" alt="foto" style="width: 128px; height: 170px; margin-right: 20px;">
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 style="margin: 2;">Hallo,<br>I'm Anisa!</h1> <!-- Menghapus margin -->
+            <div style="margin-top: 3px;"> <!-- Menambahkan jarak sedikit -->
+                <h3 style="font-family: Arial, sans-serif; margin:0;">Student at STTIKOM Insan Unggul</h3> <!-- Menghapus margin -->
+                <p style="margin: 0;">Sistem Informasi Department</p> <!-- Menghapus margin -->
+            </div>
+        </div>
+    </div>    
+    
+</header>
+
+<section id="About Me">
+    <h2>About Me</h2>
+    <p>Graduate of SMK Negeri 3 Cilegon with a major in Financial and Institutional Accounting who is honest, disciplined, responsible in carrying out work and always wants to learn new things. Graduated as the best student in the department and made financial reports during the Skills Competency Examination</p>
+</section>
+
+<section id="Short Profil">
+    <h2>Short Profil</h2>
+    <table>
+        <tr style="width: 60px;">
+            <td><img src="https://png.pngtree.com/png-vector/20191128/ourlarge/pngtree-calendar-happy-birthday-icon-circle-png-image_2049415.jpg" alt="" width="40px" height="auto"></td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td><img src="https://png.pngtree.com/png-clipart/20230320/original/pngtree-house-location-pointer-vector-illustration-png-image_8997748.png" alt="" width="40px"></td>
+            <td> kebon Gede Village, Bojonegara District, Serang</td>
+        </tr>
+        <tr>
+            <td><img src="https://w7.pngwing.com/pngs/168/559/png-transparent-telephone-mobile-phones-free-content-animated-telephone-website-telephony-stockxchng.png" alt="" width="40px"></td>
+            <td>+62 8** **** ****</td>
+        </tr>
+        <tr>
+            <td><img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-mail-sms-meb-style-icon-cartoon-hand-drawn-icon-png-image_3781135.jpg" alt="" width="40px"></td>
+            <td><a href="mailto:anisahamid2115@gmial.com" target="_blank" style="color: black;">hamidanisa69@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://png.pngtree.com/element_our/sm/20180506/sm_5aeee1ce6ebda.jpg" alt="" width="40px"></td>
+            <td><a href="https://www.instagram.com/anisahamid_21?igsh=MWQ5NnVveWdpY3p3dw==" target="_blank" style="color: black;">@anisahamid_21</a></td>
+        </tr>
+    </table>
+</section>
+
+<section id="Education">
+    <h2>Education</h2>
+    <ul>
+        <li><b>SMK Negeri 3 Cilegon</b></li>
+        <dt>Financial and Institutional Accounting</dt>
+        <p style="margin-top: 8px;margin-bottom: 30px;"><b>Loyalty Program :</b><br>Service Accounting, Trade and Manufacturing, Institutional Accounting, Taxation and Business Economics.</p>
+    </ul>
+    <ul>
+        <li><b>STTIKOM Insan Unggul</b></li>
+        <dt>Information Systems</dt>
+        <P style="margin-top: 8px;"><b>Loyalty Program :</b><br>Data Structure, Design, Accounting, Management</P>
+    </ul>
+
+</section>
+
+<section id="Work">
+    <h2>Work Experience</h2>
+    <ul >
+        <li><b>Prakerin at PT. KSOP Class I Banten</b></li>
+            <dl style="margin: 8px;">(02 November 2021 - 04 February 2022)</dl>
+            <dt style="margin: 8px;margin-bottom: 30px;">Input data on ship entry and exit and loading and unloading activities, record dispositions, archive incoming and outgoing mails and copy hardfile data.</dt>
+        <li><b>part time as Finishing at Metta Offset Printing</b></li>
+            <dl style="margin: 8px;">(24 - 30 June 2022)</dl>
+            <dt style="margin: 8px;margin-bottom: 30px;">Carry out activities to complete the final stage of printing, namely, compressing goods and checking before delivery.</dt>
+        <li><b>Part-time as a Patissier Assistant at Monce Patisserie</b></li>
+            <dl style="margin: 8px;">(02 - 09 July 2022)</dl>
+            <dt style="margin: 8px;margin-bottom: 30px;">Producing various kinds of cakes ranging from making dough, baking dough, packaging to delivering cakes.</dt>
+        <li><b>Part time sebagai Admin di Sejun Eonni UMKM Cilegon</b></li>
+            <dl style="margin: 8px;">(July 6, 2022 - Presents)</dl>
+            <dt style="margin: 8px;margin-bottom: 30px;">Calculate production costs, calculate employee salaries, assist with the production process and make deliveries.</dt>
+    </ul>
+</section>
+
+<section id="sertifikat">
+    <h2>Certificate</h2>
+    <ul>
+        <li><a  style="color:black;" href="anc/unnic.jpeg" target="_blank">Lomba UNIBI National Accounting Competition 2022</a></li>
+        <li><a style="color:black;" href="anc/magang.jpeg" target="_blank">Prakerin di KSOP Kelas I Banten 2022</a></li>
+        <li><a style="color:black;" href="anc/acc_challenge.jpeg" target="_blank">Juara I Lomba Accounting Challenge di UNSERA 2023</a></li>
+        <li><a style="color:black;" href="anc/lap_keuangan.jpeg" target="_blank">Peserta Webinar "Membuat Laporan Keuangan dengan mudah di Ms. Excel" oleh Kelas.com 2023</a></li>
+        <li><a style="color:black;" href="anc/siswa_terbaik.jpeg" target="_blank">Siswa lulusan terbaik SMK Negeri 3 Cilegon bidang Akademik tahun 2023</a></li>
+        <li><a style="color:black;" href="anc/siap_kerja.jpeg" target="_blank">Peserta seminar "Program Siap Kerja" oleh Link Productive Cilegon 2022</a></li>
+        <li><a style="color:black;" href="anc/k3.jpeg" target="_blank">Peserta E-learning "Keselamatan dan Kesehatan Kerja" oleh International Labour Organization 2022</a></li>
+    </ul>
+    
+</section>
+
+<section id="Hard Skill">
+    <h2>Hard Skill</h2>
+    <table>
+        <tr>
+            <td> <img src="https://static.vecteezy.com/system/resources/previews/022/101/030/original/microsoft-excel-logo-transparent-free-png.png" alt="" width="80px"></td>
+            <td><img src="https://logohistory.net/wp-content/uploads/2023/07/Canva-Emblem.png" alt="" width="100px"></td>
+            <td><img src="https://cdn1.iconfinder.com/data/icons/application-file-formats/128/microsoft-powerpoint-1024.png" alt="" width="60px" ></td>
+            
+        </tr>
+        <tr>
+            <td><img src="https://e7.pngegg.com/pngimages/333/848/png-clipart-microsoft-word-microsoft-corporation-microsoft-excel-microsoft-powerpoint-microsoft-officelogo-text-logo.png" alt="" width="70px"></td>
+            <td><img src="https://freelogopng.com/images/all_img/1664284918capcut-icon-png.png" alt="" width="60px"></td>
+            <td> <img src="https://img2.freepng.fr/20180616/cfq/kisspng-myob-accounting-software-business-logo-5b256637e68bb8.9854850615291776559443.jpg" alt="" width="120px"></td>
+        </tr>
+    </table>
+</section>
+
+<section id="Contact">
+    <h2>Contact</h2>
+    <table>
+        <tr>
+            <td><img src="https://e7.pngegg.com/pngimages/401/765/png-clipart-computer-icons-contant-miscellaneous-text-thumbnail.png" alt="" width="30px"></td>
+            <td style="width: 160px;">+62 8** **** ****</td>
+            <td> <img src="https://png.pngtree.com/png-vector/20190429/ourlarge/pngtree-vector-mail-icon-png-image_995083.jpg" alt="" width="30px"></td>
+            <td><a href="mailto:anisahamid2115@gmial.com" target="_blank" style="color: black;">hamidanisa69@gmail.com</a></td>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>
