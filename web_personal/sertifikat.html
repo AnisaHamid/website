@@ -8,7 +8,7 @@
         /* Style untuk drawer */
         .drawer {
             position: fixed;
-            right: -400px; /* Mulai tersembunyi */
+            right: -300px; /* Mulai tersembunyi */
             top: 0;
             width: 300px;
             height: 100%;
@@ -21,12 +21,17 @@
             flex-direction: column; /* Susun elemen secara vertikal */
         }
 
-        .drawer-header {
-            display: flex;
-            justify-content: flex-end; /* Posisikan tombol ke kanan */
-            top: 0;
-            margin-right: 15px;
-            margin-bottom: 20px; /* Jarak bawah tombol */
+        /* Tombol X untuk menutup drawer */
+        .drawer-header button {
+            font-size: 20px;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 999; /* Tombol berada di atas drawer */
         }
 
         body {
@@ -63,7 +68,7 @@
             color: #ffcc00; /* Mengubah warna saat hover */
         }
 
-        .instagram-icon{
+        .instagram-icon {
             position: absolute; /* Posisikan ikon secara absolut */
             width: 40px;
             height: 40px;
@@ -123,39 +128,17 @@
                 right: -250px; /* Untuk layar kecil */
             }
 
-            h2 {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 14px;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-
-            table {
-                width: 100%;
-            }
-
-            td {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            img {
-                width: 90%; /* Mengurangi lebar gambar untuk tampilan lebih kecil */
-            }
-
-            .instagram-icon,
-            .linkedin-icon {
-                width: 25px;
-                height: 25px;
-            }
             .drawer-header button {
-        font-size: 18px; /* Sesuaikan ukuran tombol untuk tampilan lebih kecil */
-        top: 8px; /* Sesuaikan jarak atas pada tampilan kecil */
-        right: 8px; /* Sesuaikan jarak kanan */
-    }
+                font-size: 18px;
+                top: 8px;
+                right: 8px;
+            }
+
+            button {
+                font-size: 28px;
+                top: 20px;
+                right: 10px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -164,34 +147,22 @@
                 right: -200px; /* Untuk layar sangat kecil */
             }
 
-            h2 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 12px;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-
-            img {
-                width: 100%; /* Gambar menggunakan lebar penuh */
-            }
-
-            .instagram-icon,
-            .linkedin-icon {
-                width: 20px;
-                height: 20px;
-            }
             .drawer-header button {
-        font-size: 16px; /* Ukuran tombol lebih kecil untuk layar sangat kecil */
-        top: 6px; /* Sesuaikan posisi tombol lebih rapat */
-        right: 6px;
-    }
+                font-size: 16px;
+                top: 6px;
+                right: 6px;
+            }
+
+            button {
+                font-size: 24px;
+                top: 10px;
+                right: 5px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Drawer Menu -->
     <div id="drawer" class="drawer">
         <div class="drawer-header">
             <button onclick="closeDrawer()">X</button>
@@ -202,18 +173,11 @@
         <p><a href="sertifikat.html">Award and Certification</a></p>
         <p><a href="kontak.html">Contact</a></p>
     </div>
-    <button onclick="openDrawer()" style="margin-top: 20px; margin-left: 95%;">☰</button>
 
-    <script>
-        function openDrawer() {
-            document.getElementById('drawer').style.right = '0'; // Menampilkan drawer
-        }
+    <!-- Tombol Menu (☰) untuk membuka Drawer -->
+    <button onclick="openDrawer()">☰</button>
 
-        function closeDrawer() {
-            document.getElementById('drawer').style.right = '-400px'; // Menyembunyikan drawer
-        }
-    </script>
-
+    <!-- Ikon Sosial Media -->
     <a href="https://www.linkedin.com/in/anisa-hamid-492033269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin-icon" target="_blank">
         <img src="https://e7.pngegg.com/pngimages/600/60/png-clipart-computer-icons-linkedin-social-media-social-media-angle-text.png" alt="LinkedIn">
     </a>
@@ -221,6 +185,7 @@
         <img src="https://static.vecteezy.com/system/resources/previews/040/550/696/non_2x/instagram-button-icon-instagram-screen-social-media-and-social-network-interface-template-free-png.png" alt="Instagram">
     </a>
 
+    <!-- Konten Halaman Sertifikat -->
     <h2>Award and Certification</h2>
     <hr style="margin-left: 8%; margin-right: 8%;">
 
@@ -275,9 +240,16 @@
             <td>Peserta Seminar "Program Siap Kerja" oleh Link Productive<br> (27 September 2020)</td>
             <td>Peserta E-Learning K3 oleh International Labour Organization<br> (20 Juli 2022)</td>
         </tr>
-
-
-        <!-- Tambahkan baris lainnya sesuai dengan yang sudah ada sebelumnya -->
     </table>
+
+    <script>
+        function openDrawer() {
+            document.getElementById('drawer').style.right = '0'; // Menampilkan drawer
+        }
+
+        function closeDrawer() {
+            document.getElementById('drawer').style.right = '-300px'; // Menyembunyikan drawer
+        }
+    </script>
 </body>
 </html>
