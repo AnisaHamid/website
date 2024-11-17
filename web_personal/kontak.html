@@ -6,11 +6,12 @@
     <title>Kontak</title>
     <style>
         /* Style untuk drawer */
+
         .drawer {
             position: fixed;
             right: -400px; /* Mulai tersembunyi */
             top: 0;
-            width: 250px;
+            width: 300px;
             height: 100%;
             background-color: #333;
             color: white;
@@ -31,7 +32,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             background-color: rgb(197, 190, 190);
             text-align: center;
-            margin: 0;
+            margin: 0; 
             padding: 0;
         }
 
@@ -83,8 +84,8 @@
         /* Media Queries untuk tampilan lebih kecil */
         @media (max-width: 768px) {
             .drawer {
-                width: 200px;
-                right: -200px; /* Untuk layar kecil */
+                width: 250px;
+                right: -400px; /* Untuk layar kecil */
             }
 
             h2 {
@@ -107,15 +108,24 @@
                 height: 30px;
             }
 
+    
             .drawer-header button {
                 font-size: 20px;
+                margin-top: 20px; 
+                margin-left: 95%;
             }
+            button {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 95%;
+            }
+            
         }
 
         @media (max-width: 480px) {
             .drawer {
                 width: 200px;
-                right: -200px; /* Untuk layar sangat kecil */
+                right: -400px; /* Untuk layar sangat kecil */
             }
 
             h2 {
@@ -139,7 +149,15 @@
             }
 
             .drawer-header button {
-                font-size: 18px;
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 95%;
+            }
+
+            button {
+                font-size: 20px;
+                margin-top: 20px; 
+                margin-left: 95%;
             }
         }
     </style>
